@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+        <script type="text/javascript">
+            function agre(){
+                var para = document.createElement("p");
+                var node = document.createTextNode("Miercoles.");
+                para.appendChild(node);
+                var element = document.getElementById("div1");
+                var child = document.getElementById("p3");
+                element.insertBefore(para,child);
+            }
+                </script>
+    </head>
+    <body>
+        <div id="div1">
+            <p id="p1">Lunes.</p>
+            <p id="p2">Martes.</p>
+            <p id="p3"></p>
+            <input type="button" value="Agrega"
+                   onclick="agre()"/>
+        </div>
+    </body>
+</html>
